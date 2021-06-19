@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<h4>Your Entries</h4>
+	<br>
+	{% for p in result %}
+		<div class="border rounded p-3"/;>
+			<h4><b><a href="/{{p.pid}}">{{p.title}}</a></b></h4>
+			<hr>
+			{% if p.date_posted %}
+					<p><b>Written on {{p.date_posted.date().strftime('%d/%m/%Y')}}</b></p>
+				{% endif %}
+				
+			<p>{{p.content}}</p>
+			<p><small><a href="/del/{{p.pid}}">Delete</a></small>&nbsp &nbsp<small><a href="/edit/{{p.pid}}">Edit</a></small></p>
+		</div>
+		<br>
+	{% endfor %}
+{% endblock content %}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<style type="text/css">
+		.jumbotron{
+				background-color: #122647;
+				color: white;
+				border-radius: 0px;
+		};
+
+	</style>
+
+</head>
+
+
+<body>
+
+	<div class="jumbotron">
+		<h1 style="text-align: center"> My Diary </h1>
+
+
+		<nav class="navbar navbar-expand-sm navbar-dark">
+		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		    <div class="navbar-nav">
+		    	<a class="nav-item nav-link" href="/view">View Entries </a>
+		    	<a class="nav-item nav-link" href="/add">Add Entry </a>
+		    </div>
+		  </div>
+		</nav>
+
+	</div>
+	
+
+	</nav>
+
+	<br>
+	
+		<div class="container">
+
+			{% block content %}
+
+			{% endblock content %}
+
+		</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+</body>
+</html>

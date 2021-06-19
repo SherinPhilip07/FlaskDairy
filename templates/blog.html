@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h4>Welcome to the blog {{ current_user.username }}</h4>
+
+<form method='POST', action="">
+
+	</div>
+	<div class="input-group col-lg-8">
+		<input type="text" class="form-control" name="title" placeholder="Title">
+	</div>
+	<br>
+	<div class="input-group col-lg-8">
+		<textarea class="form-control" rows="7" name="content" placeholder="Entry"></textarea>
+	</div>
+	<br>
+	<div class="input-group col-lg-8">
+		<input type="submit" value="Add Entry" class="btn btn-outline-success">
+	</div>
+	<br>
+	<div>
+		
+		<a href = "{{url_for('logout')}}" style="background-color:#f1f1f1">Logout</a>
+	</div>
+</form>
+
+<br><br>
+
+{% endblock content %}
+  

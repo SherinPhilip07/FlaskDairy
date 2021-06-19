@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div>	
+		{{error}}
+	
+</div>
+	<form action="" style="border:none" method = "POST">
+	</div>
+		<p><label for="email"><b>Email</b></label>
+		<input type="text" style="width: 200px" placeholder="Enter Email" name="email"</p>
+	
+		<p><label for="username"><b>Username</b></label>
+		<input type="text" style="width: 200px" placeholder="Enter Username" name="username" ></p>
+
+		<p><label for="password"><b>Password</b></label>
+		<input type="password" style="width: 200px" placeholder="Enter Password" name="password" ></p>
+        
+		<p><button type="submit" style="width: 200px">Submit</button></p>
+		
+		<h3>Already Have an Account?</h3><br>
+		
+		<h3><a href ="{{url_for('login')}}" style="background-color:#f1f1f1">Login Here</a></h3></div>
+	</form>
+
+<br><br>
+
+{% endblock content %}
